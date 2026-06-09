@@ -18,6 +18,7 @@ To transition visitors into members or administrators, the application implement
 
 *   **Register:** Allows new clients to create accounts, input their initial details, and select a membership plan.
 *   **Login:** A secure login interface with validation that routes users based on their roles (Client Dashboard vs. Admin Management Portal).
+<img width="1470" height="539" alt="image" src="https://github.com/user-attachments/assets/d383e78f-b4b8-43c2-9d63-0c3a4ca4bea6" />
 
 ## 📊 Administrative Portal (CRUD Operations)
 
@@ -27,7 +28,8 @@ Once authenticated, gym administrators gain access to a powerful data management
 *   **Read:** Real-time data visualization through clean tables, displaying client status, active memberships, and contact requests.
 *   **Update:** Modify existing client records, renew or upgrade membership tiers, and edit website information seamlessly.
 *   **Delete:** Remove outdated profiles or cancel memberships safely, maintaining an accurate and optimized database.
-<img width="1473" height="828" alt="image" src="https://github.com/user-attachments/assets/83226436-9272-49bd-a494-0fec148158ad" />
+<img width="1474" height="824" alt="image" src="https://github.com/user-attachments/assets/8c0474cb-56dd-47b4-ba10-b814c5ea2902" />
+
 
 ## 🛠️ Technical Overview
 
