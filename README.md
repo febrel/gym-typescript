@@ -10,6 +10,7 @@ The frontend is designed to deliver a seamless user experience, showcasing the g
 *   **Memberships & Pricing:** Presents dynamic tier pricing plans (e.g., Basic, Premium, VIP) with clear breakdowns of benefits and easy-to-use registration triggers.
 *   **Blog / News:** A dedicated space for fitness articles, nutritional advice, and community success stories, optimizing user engagement.
 *   **Contact:** Features an interactive contact form, opening hours, phone numbers, and location details to streamline customer inquiries.
+<img width="1471" height="823" alt="image" src="https://github.com/user-attachments/assets/3647b117-bbc0-4093-b40e-2effd788f961" />
 
 ## 🔐 Authentication System
 
@@ -26,6 +27,7 @@ Once authenticated, gym administrators gain access to a powerful data management
 *   **Read:** Real-time data visualization through clean tables, displaying client status, active memberships, and contact requests.
 *   **Update:** Modify existing client records, renew or upgrade membership tiers, and edit website information seamlessly.
 *   **Delete:** Remove outdated profiles or cancel memberships safely, maintaining an accurate and optimized database.
+<img width="1473" height="828" alt="image" src="https://github.com/user-attachments/assets/83226436-9272-49bd-a494-0fec148158ad" />
 
 ## 🛠️ Technical Overview
 
