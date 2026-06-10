@@ -26,7 +26,7 @@ interface GymMapProps {
 export default function GymMap({ lat, lng, name, address }: GymMapProps) {
   const position: [number, number] = [lat, lng];
 
-  // 🌑 TILES OSCUROS GRATUITOS (CartoDB Dark Matter) → SIN API KEY
+  // TILES OSCUROS GRATUITOS (CartoDB Dark Matter) → SIN API KEY
   const darkTiles =
     "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
 
@@ -35,7 +35,7 @@ export default function GymMap({ lat, lng, name, address }: GymMapProps) {
       <MapContainer
         center={position}
         zoom={15}
-        style={{ height: "400px", width: "100%", borderRadius: "12px" }}
+        style={{ height: "100%", width: "100%", borderRadius: "12px" }}
         scrollWheelZoom={false}
       >
         <TileLayer

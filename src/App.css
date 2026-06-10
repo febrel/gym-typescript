@@ -14,6 +14,7 @@ body {
 .container {
   background-color: #1e1e1e;
   padding: 20px;
+  overflow: hidden;
 }
 
 nav {
@@ -286,9 +287,9 @@ main {
 .container-main {
   display: grid;
   grid-template-areas:
-    "personal personal imagen  explore"
-    "personal personal imagen description"
-    "personal personal imagen description";
+    "personal imagen  explore"
+    "personal imagen description"
+    "personal imagen description";
   gap: 40px;
   padding: 30px;
   margin-top: 70px;
@@ -300,7 +301,7 @@ main {
 
 .personal-main h2 {
   margin: 30px 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #fff;
 }
 
@@ -666,11 +667,11 @@ main {
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 .map-wrapper {
   width: 100%;
+  max-width: 600px;
   height: 300px;
-  /* max-width: 800px; */
   margin: 0 auto;
   border-radius: 12px;
-  overflow: hidden;
+
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
@@ -681,8 +682,9 @@ main {
     system-ui,
     -apple-system,
     sans-serif;
+  width: 100%;
+  height: 100%;
 }
-
 /* Popup en modo oscuro */
 .leaflet-popup-content-wrapper {
   background: #1e1e1e;
@@ -709,6 +711,7 @@ main {
   grid-template-areas:
     "desc desc location"
     "desc desc location";
+  gap: 30px;
 }
 
 .location-desc {
@@ -752,7 +755,9 @@ main {
 
 .location-map {
   grid-area: location;
-  width: 600px;
+  width: 100%;
+  height: 300px;
+  min-width: 600px;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -853,4 +858,213 @@ main {
 
 .up:hover {
   transform: scale(1.1);
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	Media query
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/* Tablet */
+@media screen and (max-width: 834px) {
+  /* Header */
+  .grid-header {
+    grid-template-areas:
+      "contend"
+      "apps";
+    height: auto;
+    padding: 20px;
+  }
+  .grid-content h1 {
+    font-size: 3rem;
+  }
+
+  /* Main */
+  .container-main {
+    grid-template-areas:
+      "personal personal"
+      "imagen explore"
+      "description  description ";
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .personal-explore img {
+    height: 100%;
+  }
+
+  .personal-main h2 {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  .personal-main .cuadro {
+    margin: 0 auto;
+  }
+
+  /* Section */
+  .grid-section {
+    grid-template-areas:
+      "plan plan "
+      "membre membre";
+    padding: 20px;
+    height: auto;
+    gap: 20px;
+  }
+
+  .section-izq .section-cuadro {
+    margin: 0 auto;
+  }
+
+  .section-der h2 {
+    font-size: 2.2rem;
+  }
+
+  /* Article */
+  .grid-article {
+    padding: 20px;
+  }
+
+  /* Location */
+  .grid-location {
+    grid-template-areas:
+      "desc desc"
+      "location location";
+    padding: 20px;
+    gap: 20px;
+    place-items: center;
+  }
+
+  .location-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .location-desc h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  /* Header */
+  .header-icon {
+    display: none;
+  }
+
+  .grid-header {
+    padding: 10px;
+  }
+
+  .grid-content h1 {
+    margin-top: 10px;
+  }
+
+  .grid-content {
+    padding: 10px;
+  }
+
+  /* Main */
+  .container-main {
+    grid-template-areas:
+      "personal personal"
+      "imagen imagen"
+      "explore explore"
+      "description  description ";
+    padding: 10px;
+  }
+
+  .personal-main h2 {
+    font-size: 2rem;
+  }
+
+  /* Section */
+  .grid-section {
+    grid-template-areas:
+      "plan plan "
+      "membre membre";
+    padding: 10px;
+  }
+
+  .section-izq .arrow {
+    margin: 20px 0;
+  }
+
+  .section-izq .section-cuadro {
+    width: 320px;
+  }
+
+  .section-der h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-wrapper {
+    max-width: auto;
+    max-width: 380px;
+  }
+  .carousel-card .card-content {
+    padding: 15px;
+  }
+
+  /* Article */
+  .grid-article {
+    grid-template-areas:
+      "stories stories"
+      "image image"
+      "cards cards";
+    padding: 10px;
+  }
+
+  .article-img {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .location-map {
+    grid-area: location;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+  }
+  .form-group input[type="email"] {
+    width: 220px;
+  }
+
+  .grid-location {
+    padding: 10px;
+  }
+
+  /* Footer */
+
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .container-footer .footer-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-social {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }
