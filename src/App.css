@@ -187,6 +187,16 @@ nav ul li a:hover::after {
   gap: 5px;
 }
 
+.plat-sof .plat-android,
+.plat-sof .plat-ios {
+  transition: transform 0.3s ease;
+}
+
+.plat-sof .plat-android:hover,
+.plat-sof .plat-ios:hover {
+  transform: scale(1.1);
+}
+
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	Button
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/

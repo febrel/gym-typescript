@@ -43,10 +43,10 @@ function Header() {
             <p>Download Our App </p>
 
             <div className="plat-sof">
-              <p>
+              <p className="plat-android">
                 <img src={android} alt="Ir" width={50} height={50} />
               </p>
-              <p>
+              <p className="plat-ios">
                 <img src={ios} alt="Ir" width={50} height={50} />
               </p>
             </div>
