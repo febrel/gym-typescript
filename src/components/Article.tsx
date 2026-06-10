@@ -1,7 +1,7 @@
 import arrowBlack from "../assets/icons/arrow-black.svg";
 import arrowWhite from "../assets/icons/arrow-white.svg";
-import article1Img from "../assets/article1.jpg";
-import article2Img from "../assets/article2.jpg";
+import article1Img from "../assets/article1.webp";
+import article2Img from "../assets/article2.webp";
 import Cards from "./Cards";
 
 function Article() {

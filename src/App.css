@@ -78,7 +78,7 @@ nav ul li a:hover::after {
 }
 
 .container-header {
-  background-image: url("./assets/header.jpg");
+  background-image: url("./assets/header.webp");
   background-size: cover;
   background-position: start;
   background-repeat: no-repeat;
@@ -333,6 +333,7 @@ main {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  object-position: center;
 }
 
 .personal-explore {

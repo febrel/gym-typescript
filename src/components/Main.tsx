@@ -1,7 +1,7 @@
 import arrowWhite from "../assets/icons/arrow-white.svg";
 import arrowYellow from "../assets/icons/arrow-yellow.svg";
-import main1 from "../assets/main1.jpg";
-import main2 from "../assets/main2.png";
+import main1 from "../assets/main1.webp";
+import main2 from "../assets/main2.webp";
 import PincipalButton from "./Buttons/PincipalButton";
 import ArrowButton, { type ArrowButtonProps } from "./Buttons/ArrowButton";
 
