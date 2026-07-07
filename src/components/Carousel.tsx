@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // 1. Define la forma de cada tarjeta
 export interface CarouselItem {
