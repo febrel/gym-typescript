@@ -16,14 +16,6 @@ function Main() {
     circleRadius: "50%",
   };
 
-  const button3: ArrowButtonProps = {
-    text: "Orden now",
-    buttonBg: "#d2c13b",
-    buttonRadius: "8px",
-    circleBg: "#fff",
-    circleRadius: "5px",
-  };
-
   return (
     <main id="#Home" className="container-main">
       <div className="personal-main">

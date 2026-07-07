@@ -1,4 +1,3 @@
-import { useState } from "react";
 import GymMap from "./GymMap";
 
 function Location() {
