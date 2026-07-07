@@ -2,9 +2,6 @@ import { useState } from "react";
 import GymMap from "./GymMap";
 
 function Location() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-
   return (
     <div id="#blog" className="grid-location">
       <div className="location-desc">
